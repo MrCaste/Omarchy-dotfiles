@@ -68,9 +68,8 @@ window#waybar.hidden {
 
 #workspaces button.active {
   transition: none;
-  color: #e0af68;
+  color: #9ece6a;
   background: transparent;
-  font-size: 4px;
 }
 
 #pulseaudio {

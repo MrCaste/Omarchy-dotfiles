@@ -37,7 +37,7 @@
     "format-icons": {
       "persistent": "󰊠",
       "empty": "<span font='8'></span>",
-      "active": "<span font='12'>󰮯</span>"
+      "active": "<span font='15'>󰚌</span>"
     },
     "persistent-workspaces": {
       "1": [],
