@@ -1,5 +1,5 @@
 # Omarchy Dotfiles
----
+
 ## Waybar
 ### Modules left
 - Arch logo launcher
@@ -21,10 +21,16 @@ cleartarget # Clear the target
 - Volume info
 - Battery info
 - Hour
----
+
 ## Kitty Terminal
 - Hacker theme
 - JetBrainsMono Nerd Font
 ## .Zshrc
 - Personalizated command bar
+
+# IMAGES
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/b6a07ec7-76d2-4a1a-97d9-3aeec19cbfa1" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/7f6e6212-c47e-4e70-8373-80fdc2e8a6cf" />
+
+
 
