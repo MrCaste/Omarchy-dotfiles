@@ -9,14 +9,14 @@
   "modules-left": [
     "custom/omarchy",
     "custom/dots",
-    "custom/update",
     "cpu",
     "custom/voxtype",
     "custom/screenrecording-indicator",
     "custom/idle-indicator",
     "custom/notification-silencing-indicator",
     "custom/ip",
-    "custom/target"
+    "custom/target",
+    "custom/update"
   ],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
