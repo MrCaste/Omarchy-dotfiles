@@ -199,6 +199,21 @@ window#waybar.hidden {
 	background: #222330;
 }
 
+#custom-spotify, #custom-spotify.paused {
+  margin-top: 10px;
+	margin-left: 8px;
+  margin-right: 8px;
+	padding-left: 0px;
+	margin-bottom: 10px;
+	padding-right: 13px;
+	border-radius: 18px;
+  font-size: 13px;
+  font-weight: bold;
+  background: #222330;
+}
+#custom-spotify { color: #a6e3a1; }
+#custom-spotify.paused { color: #6c7086; }
+
 #tray {
   margin-right: 16px;
 }
