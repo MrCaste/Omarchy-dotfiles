@@ -16,6 +16,8 @@ cleartarget # Clear the target
 - 6 workspaces expandable to 10
 - Skull and ghost icons for active and persistence buttons
 ### Modules right
+- tray expand for hide playerctl and bloutooth
+- Playerctl for spotify
 - Bluetooth
 - Wifi info
 - Volume info
