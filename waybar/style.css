@@ -16,7 +16,7 @@ window#waybar {
 }
 
 window#waybar.hidden {
-  opacity: 0.2;
+  opacity: 0;
 }
 
 #window{
@@ -194,9 +194,10 @@ window#waybar.hidden {
 	margin-bottom: 6px;
 	padding-right: 13px;
 	border-radius: 18px;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: bold;
 	background: #222330;
+  transition: none;
 }
 
 #custom-spotify, #custom-spotify.paused {
@@ -266,11 +267,6 @@ window#waybar.hidden {
 
 tooltip {
   padding: 2px;
-}
-
-#custom-update {
-  font-size: 14px;
-	transition: none;
 }
 
 #custom-weather {
