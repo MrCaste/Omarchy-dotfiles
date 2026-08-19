@@ -2,6 +2,16 @@
 
 Personal dotfiles for **Omarchy Quattro**.
 
+## Install
+
+```bash
+git clone https://github.com/MrCaste/Omarchy-dotfiles/tree/main
+cp kitty ~/.conf/
+cp omarchy ~/.conf/
+cp .zsh ~
+```
+- Note: You need to change the plugin filenames within `omarchy` to match your username, and do the same in `shell.json`.
+
 ## Quickshell
 
 Custom Quickshell bar with the following modules:
