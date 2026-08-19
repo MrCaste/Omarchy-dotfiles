@@ -8,7 +8,7 @@ Personal dotfiles for **Omarchy Quattro**.
 git clone https://github.com/MrCaste/Omarchy-dotfiles/tree/main
 cp kitty ~/.conf/
 cp omarchy ~/.conf/
-cp .zsh ~
+cp .zshrc ~
 ```
 - Note: You need to change the plugin filenames within `omarchy` to match your username, and do the same in `shell.json`.
 
