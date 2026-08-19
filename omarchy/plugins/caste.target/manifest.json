@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "caste.target",
+  "name": "Target",
+  "version": "1.0.0",
+  "author": "Caste",
+  "description": "Shows the current pentesting target",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "Target.qml"
+  },
+  "barWidget": {
+    "displayName": "Target",
+    "description": "Current pentesting target",
+    "category": "Security",
+    "allowMultiple": false
+  }
+}
