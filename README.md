@@ -1,40 +1,78 @@
 # Omarchy Dotfiles
 
-## Waybar
+Personal dotfiles for **Omarchy Quattro**.
+
+## Quickshell
+
+Custom Quickshell bar with the following modules:
+
 ### Modules left
+
 - Arch logo launcher
-- Cpu information
-- Local ip address
-- Target to set Ex: 111.111.111.111 - Target
-```bash
-settarget 111.111.111.111 Target
-```
-```bash
-cleartarget # Clear the target
-```
+- CPU information
+- Local IP address
+- Target information
+
+Set a target:
+
+    settarget 111.111.111.111 Target
+
+Clear the current target:
+
+    cleartarget
+
 ### Modules center
-- 6 workspaces expandable to 10
-- Skull and ghost icons for active and persistence buttons
+
+- 6 workspaces, expandable up to 10
+- Skull and ghost icons for active and persistent workspace buttons
+
 ### Modules right
-- tray expand for hide playerctl and bloutooth
-- Playerctl for spotify
+
+- Expandable system tray
+- Spotify / Playerctl
 - Bluetooth
-- Wifi info
-- Volume info
-- Battery info
-- Hour
+- Wi-Fi information
+- Volume information
+- Battery information
+- Clock
+
+## Hyprland
+
+- Lua-based Hyprland configuration
+- Custom window rules
+- Custom monitor configuration
+- Custom keybindings
+- Custom look and feel
+- Rounded window corners
+- No window borders
 
 ## Kitty Terminal
-- Hacker theme
+
+- Hacker-inspired theme
 - JetBrainsMono Nerd Font
-## .Zshrc
-- Personalizated command bar
+- Custom terminal configuration
+
+## Zsh
+
+- Personalized command prompt
+- Custom aliases and shell configuration
+
+## Omarchy Version
+
+This version of the dotfiles targets:
+
+**Omarchy Quattro**
+
+## Releases
+
+- `v4.0.0` — Omarchy Quattro
+- `v3.0.0` — Omarchy 3
 
 # IMAGES
-<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/6022ccc6-8977-4938-a91d-b997d109a207" />
-<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/db7aa322-c36d-430a-aa73-25c83db734ce" />
-<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/1c07ecae-8663-44d7-bf61-56791948215a" />
-<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/d29f9ad4-7564-4500-b99d-dd08b4d3f06f" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/af8cf726-7e00-46c4-a113-f5476b8938c7" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/f1ee49bf-87f9-4fdf-a01b-7a42b4f796d8" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/f1e1e153-609f-4b45-b5c0-8502e088a3ca" />
+
 
 
 
