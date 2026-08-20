@@ -75,6 +75,7 @@ This version of the dotfiles targets:
 
 ## Releases
 
+- `v4.1.0` — Latest fixes and changes
 - `v4.0.0` — Omarchy Quattro
 - `v3.0.0` — Omarchy 3
 
