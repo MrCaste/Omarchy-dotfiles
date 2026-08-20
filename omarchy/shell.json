@@ -25,6 +25,9 @@
         },
         {
           "id": "caste.workspaces"
+        },
+        {
+          "id": "caste.system-update"
         }
       ],
       "right": [
