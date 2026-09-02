@@ -50,7 +50,7 @@
       ]
     },
     "position": "top",
-    "transparent": false,
+    "transparent": true,
     "id": "caste.bar"
   },
   "idle": {

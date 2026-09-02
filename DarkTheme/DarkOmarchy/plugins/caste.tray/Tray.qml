@@ -159,6 +159,8 @@ BarWidget {
 
       text: ""
 
+      foreground: "#c0c0cc"
+
       horizontalMargin: 8
       verticalPadding: 8
 
