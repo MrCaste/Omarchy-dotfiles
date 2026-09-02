@@ -8,7 +8,7 @@ promptinit
 #prompt adam1
 setopt PROMPT_SUBST
 
-PROMPT='%F{#9ece6a}󰣇 %f %F{#00ff88}%n%f $(dir_icon) %F{red} %~%f%${vcs_info_msg_0_} %F{yellow}$(parse_git_branch)%f %(?.%B%F{cyan}.%F{cyan})%f%b '
+PROMPT='%F{#c0c0cc}󰣇%f %F{#00ff88}%n%f $(dir_icon) %F{red} %~%f%${vcs_info_msg_0_} %F{yellow}$(parse_git_branch)%f %(?.%B%F{cyan}.%F{cyan})%f%b '
 
 # Use emacs keybindings even if our EDITOR is set to vi
 bindkey -e
