@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "caste.tray",
+  "name": "Caste Tray",
+  "version": "1.0.0",
+  "author": "Caste",
+  "description": "Custom tray with Spotify and Bluetooth",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "Tray.qml"
+  },
+  "barWidget": {
+    "displayName": "Caste Tray",
+    "description": "Custom tray with Spotify and Bluetooth",
+    "category": "System",
+    "allowMultiple": false
+  }
+}
