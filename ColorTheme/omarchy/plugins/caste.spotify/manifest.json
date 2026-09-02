@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "caste.spotify",
+  "name": "Spotify",
+  "version": "1.0.0",
+  "author": "Caste",
+  "description": "Spotify player information",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "Spotify.qml"
+  },
+  "barWidget": {
+    "displayName": "Spotify",
+    "description": "Currently playing Spotify track",
+    "category": "Media",
+    "allowMultiple": false
+  }
+}

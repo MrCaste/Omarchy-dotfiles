@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "caste.cpu",
+  "name": "CPU",
+  "version": "1.0.0",
+  "author": "Caste",
+  "description": "CPU usage indicator",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "Cpu.qml"
+  },
+  "barWidget": {
+    "displayName": "CPU",
+    "description": "CPU usage percentage",
+    "category": "System",
+    "allowMultiple": false
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "caste.network",
+  "name": "Network",
+  "version": "1.0.0",
+  "author": "Caste",
+  "description": "Wi-Fi download speed indicator",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "Panel.qml"
+  },
+  "barWidget": {
+    "displayName": "Network",
+    "description": "Wi-Fi download speed",
+    "category": "Network",
+    "allowMultiple": false
+  }
+}

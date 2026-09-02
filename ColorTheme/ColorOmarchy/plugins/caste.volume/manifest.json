@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "caste.volume",
+  "name": "Volume",
+  "version": "1.0.0",
+  "author": "Caste",
+  "description": "Audio volume indicator",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "Volume.qml"
+  },
+  "barWidget": {
+    "displayName": "Volume",
+    "description": "Audio volume percentage",
+    "category": "System",
+    "allowMultiple": false
+  }
+}

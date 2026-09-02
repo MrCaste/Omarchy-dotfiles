@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "caste.ip",
+  "name": "IP Address",
+  "version": "1.0.0",
+  "author": "Caste",
+  "description": "Shows the active local or VPN IP address",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "Ip.qml"
+  },
+  "barWidget": {
+    "displayName": "IP Address",
+    "description": "Active local or VPN IP address",
+    "category": "Network",
+    "allowMultiple": false
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "caste.bluetooth",
+  "name": "Bluetooth",
+  "version": "1.0.0",
+  "author": "Caste",
+  "description": "Bluetooth status indicator",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "Bluetooth.qml"
+  },
+  "barWidget": {
+    "displayName": "Bluetooth",
+    "description": "Bluetooth status and connected devices",
+    "category": "System",
+    "allowMultiple": false
+  }
+}

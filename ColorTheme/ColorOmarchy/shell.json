@@ -1,0 +1,62 @@
+{
+  "bar": {
+    "centerAnchor": "caste.workspaces",
+    "layout": {
+      "left": [
+        {
+          "id": "caste.menu"
+        },
+        {
+          "id": "caste.dots"
+        },
+        {
+          "id": "caste.cpu"
+        },
+        {
+          "id": "caste.ip"
+        },
+        {
+          "id": "caste.target"
+        }
+      ],
+      "center": [
+        {
+          "id": "omarchy.indicators"
+        },
+        {
+          "id": "caste.workspaces"
+        },
+        {
+          "id": "caste.system-update"
+        }
+      ],
+      "right": [
+        {
+          "id": "caste.tray"
+        },
+        {
+          "id": "caste.network"
+        },
+        {
+          "id": "caste.volume"
+        },
+        {
+          "id": "caste.battery"
+        },
+        {
+          "id": "caste.clock",
+          "format": "dddd HH:mm"
+        }
+      ]
+    },
+    "position": "top",
+    "transparent": true,
+    "id": "caste.bar"
+  },
+  "idle": {
+    "lock": 300,
+    "screensaver": 150
+  },
+  "plugins": [],
+  "version": 1
+}
