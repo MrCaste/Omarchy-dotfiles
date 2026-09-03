@@ -15,7 +15,7 @@ BarWidget {
   implicitHeight: content.implicitHeight + 12
 
   function refresh() {
-    if (!updateProc.running) updateProc.running = false
+    if (!updateProc.running) updateProc.running = true
   }
 
   function clear() { updateAvailable = false }
@@ -80,7 +80,7 @@ BarWidget {
         font.pixelSize: 14
         font.weight: Font.Bold
 
-        color: "#F1F1F1"
+        color: "#c0c0cc"
 
         verticalAlignment: Text.AlignVCenter
       }
