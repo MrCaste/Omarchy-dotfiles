@@ -20,7 +20,7 @@ hl.config({
 		rounding = 10,
 		blur = {
 			enabled = true,
-			size = 1,
+			size = 2,
 			passes = 3,
 			vibrancy = 0.2,
 			ignore_opacity = true,
