@@ -1,28 +1,44 @@
-# Omarchy Dotfiles
+<h1 align="center">🌿 Omarchy Dotfiles</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Version-v4.3.0-00ff88?style=for-the-badge" alt="Version">
   <img src="https://img.shields.io/badge/Environment-Omarchy-00e5c3?style=for-the-badge" alt="Omarchy">
   <img src="https://img.shields.io/badge/WM-Hyprland-00ff88?style=for-the-badge" alt="Hyprland">
+  <img src="https://img.shields.io/badge/Bar-Quickshell-00e5c3?style=for-the-badge" alt="Quickshell">
+  <img src="https://img.shields.io/badge/Shell-Zsh-00ff88?style=for-the-badge" alt="Zsh">
 </p>
 
 <p align="center">
-  Personal Omarchy configuration featuring custom themes, a customized Quickshell bar, terminal styling and Hyprland window effects.
+  Personal Omarchy setup with two themes, a custom Quickshell bar,<br>
+  a themed Kitty/Zsh environment and a pentesting-oriented workflow.
+</p>
+
+<p align="center">
+  <a href="#-themes">Themes</a> •
+  <a href="#-features">Features</a> •
+  <a href="#-installation">Installation</a> •
+  <a href="#-repository-structure">Structure</a> •
+  <a href="#-releases">Releases</a>
 </p>
 
 ---
 
-## Overview
+## 📖 Overview
 
-This repository contains my personal **Omarchy dotfiles**, focused on creating a customized Linux desktop environment with a consistent visual identity.
+This repository contains my personal **Omarchy dotfiles**: a customized Linux desktop with a consistent visual identity, built around Hyprland, Quickshell, Kitty and Zsh.
 
-It includes two different themes, custom Quickshell plugins, terminal configurations and Hyprland visual adjustments.
+Highlights:
 
-## Themes
+- 🎨 **Two themes**: a colorful one and a dark hacker-style one.
+- 🧩 **Custom Quickshell plugins** (`caste.*`) for CPU, IP, pentesting target, workspaces, Spotify, Bluetooth and tray.
+- 🪟 **Hyprland effects**: transparent windows with blur.
+- 🐚 **Zsh setup** with a Git-aware prompt and target management for CTFs / HackTheBox.
+
+## 🎨 Themes
 
 ### Color Theme
 
-A colorful desktop setup with a custom palette designed to provide a clean and consistent appearance.
+A colorful setup with a custom palette for a clean and consistent look.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/af8cf726-7e00-46c4-a113-f5476b8938c7" width="49%" alt="Color Theme desktop">
@@ -38,19 +54,19 @@ A dark interface with green and cyan accents, inspired by hacking and cybersecur
   <img src="https://github.com/user-attachments/assets/dbadd17c-1f1a-4eb6-bec5-c771097d43dc" width="49%" alt="Dark Theme terminal">
 </p>
 
-## Features
+## ✨ Features
 
-### Quickshell
+### Quickshell bar
 
-Custom Quickshell bar with a collection of plugins and desktop integrations.
+The bar is split into three sections:
 
-The bar is organized into three sections:
+| Section | Contents |
+|---|---|
+| **Left** | Menu, Dots, CPU, IP address, current target |
+| **Center** | System updates, workspaces |
+| **Right** | System tray, network, volume, battery, clock |
 
-- **Left:** Menu, Dots, CPU, IP address and current target.
-- **Center:** System updates and workspaces.
-- **Right:** System tray, network, volume, battery and clock.
-
-Custom plugins include:
+Custom plugins:
 
 | Plugin | Description |
 |---|---|
@@ -64,11 +80,11 @@ Custom plugins include:
 
 ### Hyprland
 
-Customized Hyprland window appearance designed to match both desktop themes.
+Window styling tuned to match both themes:
 
-- Transparent window styling.
-- Blur effects for a modern glass-like appearance.
-- Improved visual integration between windows, wallpaper and desktop elements.
+- Transparent windows.
+- Blur for a glass-like look.
+- Better visual integration between windows, wallpaper and desktop elements.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/a1872526-3262-4bad-a668-96dd8dcb96b7" width="49%" alt="Hyprland window configuration">
@@ -77,33 +93,105 @@ Customized Hyprland window appearance designed to match both desktop themes.
 
 ### Kitty
 
-Custom Kitty terminal configuration for both themes, including matching colors and terminal appearance.
+Custom Kitty configuration for each theme, with matching colors and appearance.
 
 ### Zsh
-
-Customized Zsh configuration featuring:
 
 - Custom prompt with Git branch information.
 - Syntax highlighting and autosuggestions.
 - Useful aliases and shell functions.
 - `lsd` and `bat` integrations.
-- Custom pentesting target management.
+- Pentesting target management (see below).
 
-#### Target Management
+#### 🎯 Target management
 
-The custom target functions allow you to manage your current pentesting target directly from the terminal.
+Set the current target. It shows up in the Quickshell bar through `caste.target`:
 
 ```bash
 settarget 10.10.11.100 HTB-Machine
 ```
 
-Clear the current target:
+Clear it when you are done:
 
 ```bash
 cleartarget
 ```
 
-## Repository Structure
+> [!NOTE]
+> These helpers are meant for labs and authorized environments only (HackTheBox, CTFs, your own machines).
+
+## 🚀 Installation
+
+### 1. Requirements
+
+- [Omarchy](https://omarchy.org/)
+- [Hyprland](https://hypr.land/)
+- [Quickshell](https://quickshell.org/)
+- Kitty
+- Zsh
+- `lsd`, `bat`, `git`
+- Zsh plugins: `zsh-syntax-highlighting`, `zsh-autosuggestions`
+
+Some plugins (Spotify, Bluetooth, network) may need extra system tools.
+
+### 2. Clone the repository
+
+```bash
+git clone https://github.com/MrCaste/Omarchy-dotfiles.git
+cd Omarchy-dotfiles
+```
+
+### 3. Back up your current config
+
+```bash
+BACKUP=~/dotfiles-backup-$(date +%F)
+mkdir -p "$BACKUP"
+cp -a ~/.config/omarchy "$BACKUP/omarchy" 2>/dev/null
+cp -a ~/.config/kitty   "$BACKUP/kitty"   2>/dev/null
+cp -a ~/.zshrc          "$BACKUP/.zshrc"  2>/dev/null
+```
+
+### 4. Install a theme
+
+<details open>
+<summary><b>🌑 Dark Theme</b></summary>
+
+```bash
+mkdir -p ~/.config/omarchy ~/.config/kitty
+
+cp -a DarkTheme/DarkOmarchy/. ~/.config/omarchy/
+cp DarkTheme/kitty/kitty.conf ~/.config/kitty/kitty.conf
+cp DarkTheme/.zshrc ~/.zshrc
+```
+
+</details>
+
+<details>
+<summary><b>🌈 Color Theme</b></summary>
+
+```bash
+mkdir -p ~/.config/omarchy ~/.config/kitty
+
+cp -a ColorTheme/ColorOmarchy/. ~/.config/omarchy/
+cp ColorTheme/kitty/kitty.conf ~/.config/kitty/kitty.conf
+cp ColorTheme/.zshrc ~/.zshrc
+```
+
+</details>
+
+### 5. Apply the changes
+
+```bash
+source ~/.zshrc
+hyprctl reload
+```
+
+Restart Quickshell (or log out and back in) to load the plugins.
+
+> [!WARNING]
+> These commands **overwrite** existing files. Do the backup in step 3 first, and review any hardcoded paths in scripts and plugins (e.g. `/home/caste/...`) and adapt them to your system.
+
+## 📁 Repository structure
 
 ```text
 Omarchy-dotfiles/
@@ -120,60 +208,23 @@ Omarchy-dotfiles/
 └── README.md
 ```
 
-## Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/MrCaste/Omarchy-dotfiles.git
-cd Omarchy-dotfiles
-```
-
-Choose the theme you want to install.
-
-### Dark Theme
-
-```bash
-mkdir -p ~/.config/omarchy ~/.config/kitty
-
-cp -a DarkTheme/DarkOmarchy/. ~/.config/omarchy/
-cp DarkTheme/kitty/kitty.conf ~/.config/kitty/kitty.conf
-cp DarkTheme/.zshrc ~/.zshrc
-```
-
-### Color Theme
-
-```bash
-mkdir -p ~/.config/omarchy ~/.config/kitty
-
-cp -a ColorTheme/ColorOmarchy/. ~/.config/omarchy/
-cp ColorTheme/kitty/kitty.conf ~/.config/kitty/kitty.conf
-cp ColorTheme/.zshrc ~/.zshrc
-```
-
-**Note:** These commands copy the selected configurations over existing files. Back up your current configuration before installing. Review any hardcoded paths in scripts and plugins and adapt them to your system.
-
-## Requirements
-
-- Omarchy Linux
-- Hyprland
-- Quickshell
-- Kitty
-- Zsh
-
-Some custom plugins and shell functions may require additional dependencies.
-
-## Releases
+## 🏷️ Releases
 
 | Version | Description |
 |---|---|
 | **v4.3.0** | Transparent Hyprland windows and blur effects. |
-| v4.2.0 | Previous configuration update. |
-| v4.1.0 | Previous configuration update. |
-| v4.0.0 | Previous configuration update. |
-| v3.0.0 | Previous configuration update. |
+| v4.2.0 | _Add a short summary of this release._ |
+| v4.1.0 | _Add a short summary of this release._ |
+| v4.0.0 | _Add a short summary of this release._ |
+| v3.0.0 | _Add a short summary of this release._ |
 
-## Credits
+See all versions in the [Releases page](https://github.com/MrCaste/Omarchy-dotfiles/releases).
+
+## 🤝 Feedback
+
+Found a bug or have a suggestion? Open an [issue](https://github.com/MrCaste/Omarchy-dotfiles/issues). These are personal dotfiles, so I can't promise they will work out of the box on every setup, but ideas are always welcome.
+
+## 🙏 Credits
 
 - [Omarchy](https://omarchy.org/)
 - [Hyprland](https://hypr.land/)
