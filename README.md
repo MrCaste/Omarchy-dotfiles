@@ -216,10 +216,10 @@ Omarchy-dotfiles/
 | Version | Description |
 |---|---|
 | **v4.3.0** | Transparent Hyprland windows and blur effects. |
-| v4.2.0 | _Add a short summary of this release._ |
-| v4.1.0 | _Add a short summary of this release._ |
-| v4.0.0 | _Add a short summary of this release._ |
-| v3.0.0 | _Add a short summary of this release._ |
+| v4.2.0 | _New dark theme._ |
+| v4.1.0 | _Some fixes with modules._ |
+| v4.0.0 | _Update to quickshell and omarchy quattro._ |
+| v3.0.0 | _Legacy omarchy waybar config._ |
 
 See all versions in the [Releases page](https://github.com/MrCaste/Omarchy-dotfiles/releases).
 
