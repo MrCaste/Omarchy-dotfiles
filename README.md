@@ -87,8 +87,11 @@ Window styling tuned to match both themes:
 - Better visual integration between windows, wallpaper and desktop elements.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/a1872526-3262-4bad-a668-96dd8dcb96b7" width="49%" alt="Hyprland window configuration">
-  <img src="https://github.com/user-attachments/assets/4d356903-2557-40d2-a537-257d74603c89" width="49%" alt="Hyprland transparent windows with blur">
+  <img src="https://github.com/user-attachments/assets/fc95a403-d4b1-4e27-8187-1dadbcfc14fb" width="49%" alt="Hyprland window configuration">
+  <img src="https://github.com/user-attachments/assets/662dfd60-7749-42ad-bafe-bb2ced7fd79f" width="49%" alt="Hyprland transparent windows with blur">
+
+  
+
 </p>
 
 ### Kitty
